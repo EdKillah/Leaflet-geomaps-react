@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import { MapContainer, TileLayer } from "react-leaflet";
+//import * as ELG from "esri-leaflet-geocoder";
 
 import { ChangeView } from './ChangeView';
 import { useLocation, useHistory } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import Markers from "./Markers";
 import venues from "../places.json";
+
 
 const MapView = () => {
   const token =
